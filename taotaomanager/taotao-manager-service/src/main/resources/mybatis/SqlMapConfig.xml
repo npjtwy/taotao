@@ -5,9 +5,16 @@
 <configuration>
 	<!-- 配置分页插件 -->
 	<plugins>
+
+		<!--
+			报错： pageheper 自4.0.0版本以后就不再实现这个接口了，
+		     转而实现这个接口：org.apache.ibatis.plugin.Interceptor
+		 -->
 		<plugin interceptor="com.github.pagehelper.PageHelper">
+		<!--<plugin interceptor="com.github.pagehelper.PageInterceptor">-->
 			<!-- 配置数据库的方言 -->
-			<!-- 设置数据库类型 Oracle,Mysql,MariaDB,SQLite,Hsqldb,PostgreSQL六种数据库-->        
+			<!-- 设置数据库类型 Oracle,Mysql,MariaDB,SQLite,Hsqldb,PostgreSQL六种数据库-->
+			<!--报错： pageHelper 4.0 之后已经可以自动识别数据库， 无须配置-->
         	<property name="dialect" value="mysql"/>
 		</plugin>
 	</plugins>

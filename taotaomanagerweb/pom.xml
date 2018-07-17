@@ -12,6 +12,7 @@
     <packaging>war</packaging>
 
     <dependencies>
+        <!--模块间的依赖-->
         <dependency>
             <groupId>com.taotao</groupId>
             <artifactId>taotao-common</artifactId>
@@ -22,6 +23,7 @@
             <artifactId>taotao-manager-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
