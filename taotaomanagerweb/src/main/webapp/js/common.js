@@ -113,7 +113,7 @@ var TT = TAOTAO = {
     		}
     		_ele.unbind('click').click(function(){
     			$("<div>").css({padding:"5px"}).html("<ul>")
-    			.window({
+    			.window ({
     				width:'500',
     			    height:"450",
     			    modal:true,
